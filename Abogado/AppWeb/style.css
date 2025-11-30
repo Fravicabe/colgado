@@ -1,0 +1,25 @@
+body {
+    background: rgb(2, 0,36);
+    background: linear-gradient(90deg,rgba(2,0,36) 10%, rgba(9,9,121), 60%, rgba(0,212,255,1) 100%);
+    color: white;
+}
+
+#mensaje {
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+    display: none;
+}
+
+img{
+    width: 300px;
+    border-radius: 15px;
+}
+
+#mensaje2 {
+    padding: 10px;
+    color: green;
+    font-weight: bold;
+    font-style: italic;
+    display: none;
+}

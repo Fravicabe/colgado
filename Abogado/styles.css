@@ -1,0 +1,206 @@
+/* --- Importación de Fuente Medieval --- */
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+/* --- Estilos Generales del Pergamino --- */
+body {
+    /* CAMBIO: Un color de pergamino mucho más oscuro y "sucio" */
+    background-color: #c9b79c;
+    background-image: url('https://www.transparenttextures.com/patterns/old-parchment.png');
+    
+    /* Fuente principal de estilo medieval */
+    font-family: 'MedievalSharp', cursive;
+    
+    /* Color de "tinta seca" para el texto */
+    color: #4a2c2a;
+    text-align: center;
+}
+
+/* --- Contenedor Principal del Juego --- */
+body > div {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    
+    /* CAMBIO: Un fondo de "papel" superpuesto, más oscuro y menos saturado */
+    background: rgba(180, 160, 130, 0.6);
+    
+    /* Borde como un marco de madera */
+    border: 2px solid #8a6a4a;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5); /* Sombra suave */
+}
+
+/* --- Títulos --- */
+h1 {
+    color: #3e2723; /* Marrón oscuro */
+    text-align: center;
+    text-shadow: 1px 1px #c9b79c; /* CAMBIO: Sombra con el nuevo color de fondo */
+}
+
+/* --- La Imagen (El "Ahorcado" o Criatura) --- */
+img#Abogado {
+    object-position: center;
+    margin: 0 auto 20px auto; /* Añadido margen inferior */
+    display: block;
+    border-radius: 10px;
+    
+    /* Un marco oscuro y siniestro */
+    border: 5px solid #3e2723;
+    box-shadow: 0 0 15px #000;
+    
+    /* Asegura que la imagen sea responsive */
+    max-width: 100%;
+    height: auto;
+}
+
+/* --- Mensajes de Victoria/Derrota --- */
+#colgado {
+    display:none;
+    text-align: center;
+    color: #9b0000; /* Rojo sangre oscuro */
+    font-size: 1.8rem;
+    text-shadow: 1px 1px #000;
+}
+
+#salvado {
+    display: none;
+    text-align: center;
+    color: #005600; /* Verde bosque */
+    font-size: 1.8rem;
+    text-shadow: 1px 1px #f5e8c0;
+}
+
+/* --- La Palabra (Las "Runas") --- */
+#palabra-oculta {
+    letter-spacing: 15px; /* Más espacio entre runas */
+    font-size: 2.5rem;
+    text-align: center;
+    
+    /* CAMBIO: Color azul más oscuro y menos saturado */
+    color: #4e6a91;
+    /* CAMBIO: Resplandor mucho más suave */
+    text-shadow: 0 0 5px rgba(160, 192, 255, 0.5), 0 0 8px rgba(160, 192, 255, 0.4);
+    
+    margin-top: 20px;
+    min-height: 50px; /* Evita que la página "salte" */
+}
+
+/* --- Solución (El "Conjuro Verdadero") --- */
+#solucion {
+    display: none;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #4a2c2a;
+}
+
+/* --- Mensajes de Feedback (Acierto/Fallo) --- */
+#fallos {
+    /* CAMBIO: Rojo ligeramente menos brillante */
+    color: #8c2a2a;
+    font-size: 1.2rem;
+    min-height: 1.5rem; /* Evita saltos de layout */
+}
+
+#aciertos {
+    /* CAMBIO: Verde ligeramente menos brillante */
+    color: #3a613a;
+    font-size: 1.2rem;
+    min-height: 1.5rem; /* Evita saltos de layout */
+}
+
+#letra-usada {
+    /* CAMBIO: Dorado menos brillante */
+    color: #a07b1c;
+    font-size: 1.2rem;
+    min-height: 1.5rem; /* Evita saltos de layout */
+}
+
+
+/* --- Input (Donde "Trazas la Runa") --- */
+#letra {
+    display: block;
+    color: #1E293B;
+    text-align: center;
+    margin: 15px auto;
+    border-radius: 5px;
+    
+    /* CAMBIO: Fondo de papel más oscuro, no blanco brillante */
+    background: #e0d6c3;
+    border: 1px solid #8a6a4a;
+    padding: 10px;
+    
+    /* Aseguramos que use la fuente medieval */
+    font-family: 'MedievalSharp', cursive;
+    font-size: 1.5rem;
+    width: 250px;
+    max-width: 90%;
+}
+
+/* Estilo para el placeholder */
+#letra::placeholder {
+    color: #6d4c41;
+    opacity: 0.7;
+}
+
+/* --- Botones (Estilo Placa de Madera) --- */
+/* Estos estilos sobreescribirán a Bootstrap */
+
+#comprobar,
+#resetear {
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    border-radius: 5px;
+    
+    /* CAMBIO: Texto color "hueso" o papel viejo, no pergamino brillante */
+    color: #e0d6c3;
+    
+    /* Borde que simula madera tallada */
+    border: 2px solid #3e2723;
+    
+    padding: 12px 25px;
+    font-family: 'MedievalSharp', cursive;
+    font-size: 1.2rem;
+    cursor: pointer;
+    
+    /* Sombra 3D */
+    box-shadow: 0 4px #3e2723;
+    transition: all 0.1s ease;
+    
+    /* Anulación de Bootstrap */
+    text-transform: none;
+    line-height: 1.5;
+}
+
+/* Estilo "Comprobar" (Madera oscura) */
+#comprobar {
+    background-color: #6d4c41; /* Color madera */
+    border-color: #3e2723;
+    box-shadow: 0 4px #3e2723;
+}
+
+/* Estilo "Nueva Partida" (Piedra verde/musgo) */
+#resetear {
+    display: none; /* Mantenemos el estilo original */
+    background-color: #556b2f; /* Verde musgo */
+    border-color: #3a4a1f;
+    box-shadow: 0 4px #3a4a1f;
+}
+
+/* --- Efecto Hover para Botones --- */
+#comprobar:hover,
+#resetear:hover {
+    /* CAMBIO: El brillo en hover ahora es del color hueso */
+    box-shadow: 0 2px #3e2723, 0 0 10px #e0d6c3;
+    transform: translateY(2px);
+}
+
+#comprobar:hover {
+    background-color: #4e342e;
+}
+
+#resetear:hover {
+    background-color: #3a4a1f;
+    /* CAMBIO: Sombra y brillo específicos para este botón */
+    box-shadow: 0 2px #3a4a1f, 0 0 10px #e0d6c3;
+}
