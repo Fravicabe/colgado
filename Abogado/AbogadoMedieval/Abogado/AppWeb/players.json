@@ -1,0 +1,43 @@
+[
+	{ 
+		"id":1,
+		"nombre":"Vinicius1",
+        "apellido":"Jr",
+        "edad":28,
+        "posicion":"FW",
+        "equipo":"REAL MADRID"
+    },
+    { 
+		"id":2,
+		"nombre":"Rodrygo",
+        "apellido":"Goes",
+        "edad":22,
+        "posicion":"FW",
+        "equipo":"REAL MADRID"
+    },
+	{ 
+		"id":3,
+		"nombre":"Leo",
+        "apellido":"Messi",
+        "edad":37,
+        "posicion":"FW",
+        "equipo":"FC BARCELONA"
+    },
+	{ 
+		"id":4,
+		"nombre":"Ter",
+        "apellido":"Steagen",
+        "edad":30,
+        "posicion":"GK",
+        "equipo":"FC BARCELONA"
+    },
+	{
+		"id":5,
+		"nombre":"Marc",
+        "apellido":"Casadó",
+        "edad":18,
+        "posicion":"MD",
+        "equipo":"FC BARCELONA"
+    }
+	
+]
